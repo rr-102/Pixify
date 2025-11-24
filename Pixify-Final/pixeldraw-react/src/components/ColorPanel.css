@@ -1,0 +1,140 @@
+.color-panel {
+  background: #252535;
+  padding: 20px;
+  border-left: 2px solid #3a3a4e;
+  overflow-y: auto;
+  min-width: 280px;
+}
+
+.color-panel h3,
+.color-panel h4 {
+  color: #9ca3af;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.color-panel h4 {
+  margin-top: 20px;
+}
+
+.current-colors {
+  margin-bottom: 20px;
+}
+
+.color-display {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.color-display label {
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+.color-square {
+  width: 60px;
+  height: 60px;
+  border: 3px solid #3a3a4e;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.color-square:hover {
+  transform: scale(1.05);
+}
+
+.color-sliders {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.slider-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.slider-group label {
+  color: #9ca3af;
+  font-size: 12px;
+}
+
+.slider-group span {
+  color: #fff;
+  font-size: 12px;
+  text-align: right;
+}
+
+.color-slider {
+  width: 100%;
+}
+
+.hex-input {
+  width: 100%;
+  padding: 8px;
+  background: #2a2a3e;
+  border: 1px solid #3a3a4e;
+  border-radius: 6px;
+  color: #fff;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+}
+
+.preset-grid,
+.recent-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}
+
+.preset-color,
+.recent-color {
+  width: 100%;
+  aspect-ratio: 1;
+  border: 2px solid #3a3a4e;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.preset-color:hover,
+.recent-color:hover {
+  border-color: #667eea;
+  transform: scale(1.1);
+}
+
+.export-settings {
+  margin-top: 20px;
+}
+
+.export-settings .setting-input {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.export-btn {
+  width: 100%;
+  padding: 12px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.export-btn:hover {
+  background: #5568d3;
+  transform: translateY(-2px);
+}
+
+.export-btn:active {
+  transform: translateY(0);
+}

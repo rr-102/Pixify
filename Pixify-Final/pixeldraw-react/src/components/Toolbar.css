@@ -1,0 +1,133 @@
+.toolbar {
+  background: #252535;
+  padding: 20px;
+  border-right: 2px solid #3a3a4e;
+  overflow-y: auto;
+  min-width: 220px;
+}
+
+.toolbar h3 {
+  color: #9ca3af;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.tool-buttons,
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tool-btn,
+.action-btn {
+  padding: 12px;
+  background: #2a2a3e;
+  border: 2px solid #3a3a4e;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.tool-btn span:first-child {
+  font-size: 18px;
+}
+
+.tool-btn:hover,
+.action-btn:hover:not(:disabled) {
+  background: #3a3a4e;
+  border-color: #667eea;
+}
+
+.tool-btn.active {
+  background: #667eea;
+  border-color: #667eea;
+}
+
+.action-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #3a3a4e;
+  margin: 20px 0;
+}
+
+.canvas-settings {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.canvas-settings label {
+  color: #9ca3af;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.setting-input,
+.slider {
+  width: 100%;
+  padding: 8px;
+  background: #2a2a3e;
+  border: 1px solid #3a3a4e;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  background: #3a3a4e;
+  outline: none;
+  padding: 0;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #667eea;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: #667eea;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+}
+
+.pixel-size-value {
+  color: #fff;
+  font-size: 12px;
+  text-align: right;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #9ca3af;
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: auto;
+  cursor: pointer;
+}

@@ -1,0 +1,37 @@
+.canvas-container {
+  background: #2a2a3e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  position: relative;
+  min-height: 600px;
+}
+
+.canvas-wrapper {
+  position: relative;
+  background: #fff;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+}
+
+.cursor-pen {
+  cursor: crosshair;
+}
+
+.cursor-eraser {
+  cursor: cell;
+}
+
+.cursor-eyedropper {
+  cursor: copy;
+}
+
+.cursor-fill {
+  cursor: pointer;
+}
